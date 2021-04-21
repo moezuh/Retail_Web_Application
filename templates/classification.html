@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Classification ML</title>
+    </head>
+    <body>
+        <form method = "POST" action="#">
+            <label for="total_spend">Total Spend:</label>
+            <select name="spend" id="total_spend">
+                {% for item in spend_items %}
+                    <option value={{item}}>{{item}}</option>
+                {% endfor %}
+            </select>
+
+            <label for="marital_status">Marital Status:</label>
+            <select name="marital" id="marital_status">
+                <option value = "Single"></option>
+                <option value = "Married"></option>
+            </select>
+
+            <label for="house_size">Household Size:</label>
+            <select name="house" id="house_size">
+                {% for item in housesize_items %}
+                    <option value={{item}}>{{item}}</option>
+                {% endfor %}
+            </select>
+
+            <label for="income_range">Income Range:</label>
+            <select name="income" id="income_range">
+                {% for item in income_items %}
+                    <option value={{item}}>{{item}}</option>
+                {% endfor %}
+            </select>
+
+            <input type="submit" value="Submit">
+            <br><br>
+        </form>
+    </body>
+</html>

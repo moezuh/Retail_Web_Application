@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+</head>
+<body>
+    <div class="login-div">
+    	<div class="title">Sign In to view dashboards</div>
+	<form method="post" action="/validate">
+	    <div class="username">
+		<label class="label-info">Email:</label>
+		<input id="email" name="email" type="text"/>
+	    </div>
+
+	    <div class="password">
+	        <label class="label-info">Password:</label>
+		<input id="password" name="password" type="password"/>
+	    </div>
+
+	    <div class="buttons">
+		<button class="sign-in-button">Log In</button>
+		<button class="sign-up-button">
+		<a href="/signup">Sign Up</a>
+		</button>
+	    </div>
+
+        </form>
+    </div>
+</body>
+</html>
+

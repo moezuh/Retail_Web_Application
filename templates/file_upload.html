@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+</head>
+<body>
+    {% if filename %}
+        <h1>{{ filename }} succsessfully uploaded!</h1>
+    {% endif %}
+    <div class="file-div">
+        <div class="title">Upload Your Own Data Set Here!</div>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="households">Households File</label>
+            <input type="file" id="households" name="file1">
+            <br>
+            <label for="products">Products File</label>
+            <input type="file" id="products" name="file2">
+            <br>
+            <label for="transactions">Transactions File</label>
+            <input type="file" id="transactions" name="file3">
+            <br>
+            <button class="sign-in-button" type="submit">Submit</button>
+        </form>
+        <button class="sample-data">
+            <a href="/data_sample">View Data</a>
+        </button>
+        <button class="Dashboards">
+            <a href="/Dashboard">Dashboards</a>
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+*
+{
+    font-family: 'Lexend Maga';
+}
+
+body
+{
+    background-color:rgb(153, 42, 42);
+}
+
+.Signup-div
+{
+    margin: 100px auto;
+    width: 400px;
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 10px;
+}
+
+.title
+{
+    text-align: center;
+    color:rgb(71, 71, 71);
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+form
+{
+    width: 100%;
+    margin-top: 30px;
+}
+
+form input
+{
+    color:rgb(82, 82, 82);
+    font-size: 18px;
+    padding: 10px 20px 10px 5px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.label-info
+{
+    color:rgb(124, 124, 124);
+    font-size: 16px;
+}
+
+.firstname,.lastname, .email, .password
+{
+    display: block;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.buttons
+{
+    display: flex;
+    justify-content: space-between;
+    transition: color 0.5s;
+}
+
+
+.buttons a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+button.submit-button
+{
+    color: #fff;
+    width: 50%;
+    padding: 12px 10px;
+    border: none;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: rgb(64, 211, 64);
+}
+
+button.Home-button
+{
+    width: 50%;
+    padding: 12px 10px;
+    border: none;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: rgb(44, 189, 247);
+}
+
+button.submit-button:hover
+{
+    background-color: rgb(96, 100, 96);
+    cursor: grab;
+}
+
+button.Home-button:hover
+{
+    background-color: rgb(96, 100, 96);
+    cursor: grab;
+}
+		                  

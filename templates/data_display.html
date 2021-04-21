@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample data in database</title>
+        <style type="text/css">
+            table 
+            {
+                border-collapse: collapse;
+                width: 100%;
+                font-family: monospace;
+                text-align: center;
+                
+            }
+            th
+            {
+                border-style: groove;
+            }
+            .Meta-data
+            {
+                border-style: groove;
+                font-size: 13px;
+                color: #fff;
+                background-color: #588c7e;
+            }
+            .hh-data
+            {
+                font-size: 11px;
+                color: #588c7e;
+            }
+
+            .buttons a
+            {
+                text-decoration: none;
+                color: #fff;
+            }
+            
+            .dashboard-button
+            {
+                width: 8%;
+                padding: 9px 9px;
+                margin-left: 5px;
+                margin-top: 50px;
+                border: none;   
+                font-size: 14px;
+                border-radius: 5px;
+                background-color: rgb(8 28 127 / 61%);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="HSHD_NUMs">
+            <form method = "POST" action="/data_sample">
+                <label for="HSHD_NUMBERS">Select Household number:</label>
+                <select name="HSHD_NUM" id="HSHD_NUMBERS">
+                    <option value = "10"></option>
+                    {% for item in HSHD_NUMs %}
+                        <option value={{item}}>{{item}}</option>
+                    {% endfor %}
+                </select>
+                <br><br>    
+                <input type="submit" value="Submit">
+                <br><br>
+              </form>
+        </div>
+
+        <div id="data">
+            <table>
+                <tr class="Meta-data">
+                        <th>HH_NUM</th><th>LOYAL</th>  <th>AGE</th> <th>MARITAL</th> <th>INCOME</th> <th>HOME_OWNER</th> <th>HH_COMPOSITION</th> <th>HH_SIZE</th> <th>CHILDREN</th> <th>BASKET_NUM</th> <th>PURCHASE</th> <th>SPEND</th> <th>UNITS</th> <th>STORE_R</th> <th>WEEK_NUM</th> <th>YEAR</th> <th>PRODUCT_NUM</th> <th>DEPARTMENT</th> <th>COMMODITY</th> <th>BRAND_TY</th> <th>ORGANIC</th>
+                </tr>
+                {% for row in data %}
+                    <tr class="hh-data">
+                        {% for item in row %}
+                            <th>{{item}}</th>
+                        {% endfor %}
+                    </tr>
+                {% endfor %} 
+            </table>
+        </div>
+
+        <div class="buttons">
+			<button class="dashboard-button">
+				<a href="/Dashboard">Dashboards</a>
+			</button>
+		</div>
+    </body>
+</html>

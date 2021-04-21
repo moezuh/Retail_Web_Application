@@ -1,0 +1,269 @@
+﻿HSHD_NUM,TOTAL_SPEND,MARITAL,HH_SIZE,INCOME_RANGE,LOYALTY_FLAG
+10,89.24,Single ,1,35-49K              ,Y  
+53,94.62,Married,3,50-74K              ,Y  
+54,79.05,Married,2,UNDER 35K           ,Y  
+60,292.23,Married,5+        ,35-49K              ,Y  
+99,150.1,Married,3,75-99K              ,Y  
+117,168.14,Single ,5+        ,150K+               ,Y  
+136,95.61,Married,3,50-74K              ,Y  
+139,11.28,Single ,1,35-49K              ,Y  
+151,114.42,Single ,1,150K+               ,N  
+160,62.01,Married,4,100-150K            ,Y  
+172,79.63,Single ,1,UNDER 35K           ,Y  
+183,228.53,Single ,2,50-74K              ,Y  
+184,90.83,Married,3,35-49K              ,Y  
+196,64.77,Married,3,50-74K              ,Y  
+242,86.6,Single ,2,50-74K              ,N  
+308,166.16,Single ,1,50-74K              ,Y  
+361,77.99,Married,3,100-150K            ,N  
+401,135.5,Single ,2,35-49K              ,Y  
+422,71.54,Single ,5+        ,50-74K              ,Y  
+428,81.73,Married,2,35-49K              ,Y  
+438,457.95,Single ,2,150K+               ,Y  
+453,94.69,Married,2,150K+               ,Y  
+459,69.11,Married,3,50-74K              ,N  
+482,36.64,Single ,1,50-74K              ,N  
+525,47.77,Single ,2,UNDER 35K           ,Y  
+554,86.25,Single ,1,UNDER 35K           ,N  
+575,31.72,Single ,1,50-74K              ,Y  
+577,84.17,Married,2,UNDER 35K           ,Y  
+590,129.7,Married,5+        ,35-49K              ,Y  
+594,23.34,Single ,2,35-49K              ,N  
+605,57.31,Married,3,UNDER 35K           ,N  
+632,48.6,Married,2,50-74K              ,Y  
+642,35.69,Single ,2,35-49K              ,N  
+655,96.97,Single ,1,UNDER 35K           ,N  
+682,29.16,Single ,3,35-49K              ,N  
+720,71.69,Married,2,75-99K              ,Y  
+762,23.41,Single ,2,50-74K              ,N  
+764,48.06,Single ,2,100-150K            ,Y  
+766,83.1,Married,3,UNDER 35K           ,Y  
+779,177.37,Single ,1,50-74K              ,Y  
+789,211.21,Married,3,150K+               ,Y  
+794,28.45,Single ,1,35-49K              ,Y  
+801,102.99,Married,3,50-74K              ,Y  
+808,53.41,Married,2,UNDER 35K           ,Y  
+812,25.64,Married,2,50-74K              ,Y  
+815,200.43,Married,2,UNDER 35K           ,Y  
+839,75.24,Single ,1,35-49K              ,Y  
+845,101.98,Single ,2,UNDER 35K           ,Y  
+916,2,Married,3,100-150K            ,N  
+982,62.57,Married,2,75-99K              ,Y  
+984,156.52,Married,3,50-74K              ,Y  
+986,69.93,Single ,1,35-49K              ,Y  
+991,234.53,Single ,1,50-74K              ,Y  
+992,157.32,Single ,1,75-99K              ,Y  
+1012,49.45,Married,3,UNDER 35K           ,N  
+1015,95.09,Single ,4,UNDER 35K           ,Y  
+1020,124.54,Married,4,150K+               ,Y  
+1034,183.33,Single ,5+        ,35-49K              ,Y  
+1080,93.74,Married,4,150K+               ,Y  
+1082,278.98,Single ,1,UNDER 35K           ,Y  
+1102,221.46,Married,5+        ,75-99K              ,Y  
+1112,9.98,Married,2,150K+               ,Y  
+1120,164.74,Single ,2,35-49K              ,Y  
+1121,19.12,Single ,2,35-49K              ,N  
+1122,26.71,Single ,4,100-150K            ,N  
+1137,107.89,Married,4,75-99K              ,Y  
+1165,26.98,Single ,1,35-49K              ,Y  
+1187,108.09,Married,5+        ,75-99K              ,Y  
+1192,70.38,Single ,1,75-99K              ,N  
+1195,186.7,Married,5+        ,35-49K              ,Y  
+1205,44.4,Married,3,50-74K              ,N  
+1241,311.97,Married,3,35-49K              ,Y  
+1245,223.31,Married,5+        ,100-150K            ,Y  
+1251,217.25,Married,2,50-74K              ,Y  
+1265,164.32,Married,3,150K+               ,Y  
+1270,326.79,Married,5+        ,35-49K              ,Y  
+1277,89.99,Single ,1,35-49K              ,Y  
+1290,43.97,Married,2,35-49K              ,Y  
+1308,68.46,Single ,1,35-49K              ,N  
+1349,2.99,Single ,1,35-49K              ,N  
+1358,2.49,Single ,4,100-150K            ,N  
+1373,34.31,Married,3,UNDER 35K           ,Y  
+1399,39.26,Single ,1,UNDER 35K           ,N  
+1404,165.27,Married,2,100-150K            ,Y  
+1437,67.39,Single ,1,UNDER 35K           ,Y  
+1441,159.11,Married,5+        ,50-74K              ,Y  
+1446,126.89,Married,5+        ,50-74K              ,Y  
+1448,132.72,Married,3,50-74K              ,Y  
+1473,63.8,Married,4,35-49K              ,Y  
+1492,281.31,Married,3,35-49K              ,Y  
+1495,69.86,Married,2,UNDER 35K           ,N  
+1526,38.64,Married,5+        ,50-74K              ,Y  
+1554,44.7,Single ,1,UNDER 35K           ,Y  
+1567,108.41,Single ,1,UNDER 35K           ,Y  
+1618,103.19,Married,2,100-150K            ,N  
+1631,110.26,Single ,2,35-49K              ,Y  
+1632,134.33,Single ,1,150K+               ,N  
+1729,98.66,Single ,2,75-99K              ,Y  
+1748,208.87,Married,5+        ,100-150K            ,Y  
+1770,103.07,Married,2,35-49K              ,Y  
+1786,67.09,Married,5+        ,50-74K              ,N  
+1797,98.24,Married,3,50-74K              ,N  
+1836,59.68,Married,2,35-49K              ,Y  
+1861,53.12,Single ,1,50-74K              ,Y  
+1873,95.34,Married,3,50-74K              ,Y  
+1885,210.5,Married,4,75-99K              ,Y  
+1904,41.45,Married,3,50-74K              ,Y  
+1916,216.93,Single ,1,35-49K              ,N  
+1924,178.43,Single ,4,100-150K            ,Y  
+1990,269.01,Married,3,50-74K              ,Y  
+2004,168.93,Single ,2,150K+               ,Y  
+2011,243,Single ,2,UNDER 35K           ,Y  
+2017,1.58,Single ,1,50-74K              ,Y  
+2019,60.56,Single ,1,150K+               ,N  
+2022,167.13,Single ,1,150K+               ,Y  
+2066,72.82,Single ,1,50-74K              ,Y  
+2077,168.16,Single ,1,75-99K              ,Y  
+2102,93.78,Married,3,150K+               ,Y  
+2143,167.23,Single ,4,100-150K            ,Y  
+2148,62.04,Single ,2,35-49K              ,Y  
+2150,148.07,Married,2,35-49K              ,Y  
+2175,220.69,Single ,4,50-74K              ,Y  
+2178,30.91,Single ,1,UNDER 35K           ,Y  
+2189,139.5,Married,2,UNDER 35K           ,N  
+2200,138.4,Married,2,UNDER 35K           ,Y  
+2211,15.04,Single ,1,50-74K              ,N  
+2232,41.4,Married,3,UNDER 35K           ,N  
+2244,98.71,Single ,1,35-49K              ,Y  
+2306,1.29,Married,2,50-74K              ,Y  
+2319,50.3,Married,2,50-74K              ,N  
+2320,149.84,Married,2,75-99K              ,N  
+2337,1.49,Married,3,35-49K              ,N  
+2345,72.2,Married,3,35-49K              ,Y  
+2371,221.49,Married,3,150K+               ,Y  
+2375,139.46,Married,2,UNDER 35K           ,N  
+2379,27.1,Married,2,35-49K              ,N  
+2391,118.89,Married,5+        ,75-99K              ,N  
+2406,81.29,Married,3,UNDER 35K           ,N  
+2420,80.38,Married,2,75-99K              ,Y  
+2436,171.55,Single ,1,150K+               ,Y  
+2442,216.56,Single ,1,35-49K              ,Y  
+2454,15.48,Married,3,50-74K              ,N  
+2504,31.17,Married,2,UNDER 35K           ,Y  
+2507,95.72,Married,3,35-49K              ,Y  
+2512,346.45,Single ,5+        ,100-150K            ,Y  
+2519,101.13,Married,3,75-99K              ,Y  
+2541,99.82,Single ,2,50-74K              ,Y  
+2555,99.91,Married,2,100-150K            ,Y  
+2572,57.04,Married,2,100-150K            ,Y  
+2573,97.71,Single ,2,100-150K            ,Y  
+2575,189.23,Single ,1,35-49K              ,Y  
+2584,43.23,Single ,1,35-49K              ,Y  
+2617,75.24,Single ,2,100-150K            ,N  
+2629,342.26,Married,3,75-99K              ,Y  
+2638,153.99,Married,2,35-49K              ,Y  
+2639,117.06,Married,4,75-99K              ,Y  
+2652,93.68,Single ,1,75-99K              ,N  
+2654,44.61,Married,5+        ,UNDER 35K           ,Y  
+2707,53.42,Single ,1,UNDER 35K           ,N  
+2710,126.39,Married,2,50-74K              ,Y  
+2745,133.32,Single ,1,50-74K              ,Y  
+2762,94.95,Single ,1,50-74K              ,Y  
+2780,222.67,Single ,5+        ,35-49K              ,Y  
+2781,32.82,Married,3,50-74K              ,Y  
+2822,1.5,Married,5+        ,100-150K            ,Y  
+2844,61.78,Single ,1,35-49K              ,Y  
+2847,15.47,Married,4,150K+               ,Y  
+2874,91.87,Married,3,150K+               ,Y  
+2986,117.22,Married,3,UNDER 35K           ,N  
+2990,100.39,Single ,2,UNDER 35K           ,Y  
+3003,102.14,Single ,2,100-150K            ,Y  
+3004,66.88,Married,2,35-49K              ,Y  
+3014,144.42,Married,4,UNDER 35K           ,Y  
+3022,202.52,Married,4,100-150K            ,Y  
+3030,80.16,Married,2,50-74K              ,N  
+3044,69.79,Single ,1,75-99K              ,Y  
+3060,53.76,Married,3,100-150K            ,Y  
+3111,123.03,Married,5+        ,100-150K            ,Y  
+3151,175.52,Married,2,100-150K            ,Y  
+3163,76.38,Single ,1,75-99K              ,Y  
+3164,160.63,Married,4,75-99K              ,Y  
+3186,48.86,Married,2,150K+               ,Y  
+3205,42.14,Married,2,50-74K              ,N  
+3214,267.39,Married,2,100-150K            ,Y  
+3220,89.36,Married,5+        ,75-99K              ,Y  
+3232,138.87,Married,2,50-74K              ,N  
+3243,98.32,Single ,1,50-74K              ,Y  
+3246,120.08,Married,3,150K+               ,Y  
+3247,126.31,Married,4,75-99K              ,N  
+3267,168.27,Married,5+        ,100-150K            ,Y  
+3274,34.83,Married,2,150K+               ,N  
+3314,137.45,Single ,3,75-99K              ,Y  
+3319,65.12,Married,2,50-74K              ,Y  
+3358,173.4,Married,3,50-74K              ,Y  
+3398,185.08,Single ,2,100-150K            ,Y  
+3411,195.97,Married,5+        ,100-150K            ,Y  
+3418,96.27,Single ,5+        ,50-74K              ,N  
+3467,77.39,Single ,1,50-74K              ,N  
+3474,80.63,Married,3,100-150K            ,N  
+3476,56.49,Married,2,100-150K            ,Y  
+3486,126.97,Married,3,100-150K            ,Y  
+3496,279.35,Married,3,50-74K              ,Y  
+3523,123.4,Married,4,75-99K              ,Y  
+3614,15.18,Married,3,75-99K              ,Y  
+3672,185.58,Married,3,50-74K              ,Y  
+3687,100.25,Single ,1,50-74K              ,N  
+3758,130.56,Single ,1,50-74K              ,Y  
+3784,93,Single ,3,50-74K              ,Y  
+3785,222.58,Single ,1,35-49K              ,Y  
+3800,68.5,Single ,1,50-74K              ,N  
+3809,207.33,Married,4,150K+               ,Y  
+3819,16.72,Single ,1,UNDER 35K           ,N  
+3820,141.68,Single ,2,50-74K              ,Y  
+3840,209.23,Married,4,UNDER 35K           ,Y  
+3842,78.56,Married,3,50-74K              ,N  
+3889,250.66,Married,4,50-74K              ,Y  
+3893,67.81,Single ,1,UNDER 35K           ,Y  
+3904,169.86,Single ,2,50-74K              ,Y  
+3964,123.86,Married,3,100-150K            ,Y  
+3969,52.89,Married,2,50-74K              ,Y  
+3988,46.51,Single ,1,UNDER 35K           ,N  
+3993,61.75,Married,3,75-99K              ,Y  
+4005,84.1,Single ,1,50-74K              ,Y  
+4011,158.97,Single ,1,75-99K              ,Y  
+4037,162.75,Married,2,UNDER 35K           ,Y  
+4057,88.04,Single ,2,75-99K              ,Y  
+4065,96.09,Single ,1,35-49K              ,Y  
+4078,252.89,Single ,2,150K+               ,Y  
+4085,166.29,Single ,1,UNDER 35K           ,Y  
+4105,5.27,Single ,1,35-49K              ,Y  
+4126,297.34,Single ,2,100-150K            ,Y  
+4159,87.56,Single ,1,100-150K            ,N  
+4171,78.27,Single ,3,UNDER 35K           ,Y  
+4183,47.88,Married,4,75-99K              ,Y  
+4214,73.18,Single ,1,50-74K              ,Y  
+4218,206.33,Single ,1,75-99K              ,Y  
+4249,76.65,Married,2,UNDER 35K           ,Y  
+4366,93.47,Single ,1,50-74K              ,N  
+4372,77.19,Married,2,50-74K              ,Y  
+4414,150.49,Single ,1,35-49K              ,Y  
+4420,92.12,Single ,1,50-74K              ,Y  
+4439,158.4,Single ,1,100-150K            ,Y  
+4453,99,Married,5+        ,50-74K              ,N  
+4457,62.67,Single ,2,75-99K              ,N  
+4458,346.81,Married,5+        ,150K+               ,N  
+4498,99.9,Single ,1,50-74K              ,N  
+4506,149.85,Married,4,150K+               ,Y  
+4587,34.38,Single ,1,UNDER 35K           ,N  
+4603,150.17,Married,2,50-74K              ,N  
+4604,100.86,Single ,1,100-150K            ,Y  
+4606,134.37,Single ,1,35-49K              ,N  
+4623,107.2,Married,2,50-74K              ,Y  
+4713,188.77,Single ,5+        ,100-150K            ,Y  
+4716,68.36,Single ,1,75-99K              ,N  
+4719,58.76,Married,2,UNDER 35K           ,Y  
+4724,16.56,Single ,1,50-74K              ,N  
+4725,116.8,Married,2,UNDER 35K           ,Y  
+4740,44.2,Single ,2,UNDER 35K           ,Y  
+4745,80.44,Single ,1,UNDER 35K           ,N  
+4757,11.43,Single ,1,100-150K            ,N  
+4766,170.15,Married,3,75-99K              ,Y  
+4774,41.78,Married,3,100-150K            ,Y  
+4778,187.78,Single ,3,UNDER 35K           ,Y  
+4816,54.6,Married,2,50-74K              ,Y  
+4857,113.09,Married,4,UNDER 35K           ,Y  
+4878,72.33,Married,2,35-49K              ,N  
+4879,143.7,Single ,1,75-99K              ,Y  
+4974,48.39,Married,2,50-74K              ,Y  

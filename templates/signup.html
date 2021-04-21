@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles1.css')}}">
+</head>
+<body>
+	<div class="Signup-div">
+		<div class="title">Enter your Information</div>
+	        	<form method="post" action="/post_info">
+				<div class="firstname">
+					<label class="label-info">First Name:</label>
+					<input id="fname" name="fname" type="text"/>
+				</div>
+	
+				<div class="lastname">
+					<label class="label-info">Last Name:</label>
+					<input id="lname" name="lname" type="text"/>
+				</div>
+	
+				<div class="email">
+					<label class="label-info">Email:</label>
+					<input id="email" name="email" type="text"/>
+				</div>
+
+		                <div class="password">
+					<label class="label-info">Password:</label>
+					<input id="password" name="password" type="password"/>
+				</div>
+
+				<div class="buttons">
+					<button class="submit-button" type="submit">Submit</button>
+					<button class="Home-button">
+					<a href="/">Home</a>
+					</button>
+				</div>
+			</form>
+		</div>
+</body>
+
