@@ -1,13 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for
 from werkzeug.utils import secure_filename
-#from sklearn.linear_model import LogisticRegression
-#from sklearn.model_selection import train_test_split
-#from sklearn import preprocessing
+from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import LinearRegression
 import pandas as pd
 import numpy as np
-import urllib.request
-import json
-import ssl
 import pypyodbc
 import os
 import csv
@@ -108,16 +104,9 @@ def validate():
         try:
             id_ = db.execute("SELECT * FROM users_info WHERE emails = ? AND passwords = ?",(username, password)).fetchone()[0]
             conn.close()
-            return redirect(url_for("classification")) # ****Changes by Moez****
-            #return redirect(url_for("dashboards")) # redirent to dashboard upon validating the credentials
+            return redirect(url_for("class_user_test")) # change it to dashboards to display dashbaords
         except:
             return render_template("invalid_login.html")  
-
-# ****Changes by Moez****
-@app.route('/classification') 
-def classification():
-    return redirect("https://ml.azure.com/endpoints/lists/realtimeendpoints/customerloyalty/test?wsid=/subscriptions/be8ddb87-69b2-49d7-86a9-fa4c05b1059e/resourcegroups/resourceGroupFinal/workspaces/FinalMLdemo&tid=309b8e1d-719b-435b-81b2-82756e92c7c2")
-# *** You might want to remove it
 
 @app.route('/Dashboard') # display dashboard
 def dashboards():
@@ -193,44 +182,71 @@ def data_sample():
     return render_template('data_display.html', data = hh_details, HSHD_NUMs=HSHD_NUMs)
 
 
-@app.route('/classification_test')
+@app.route('/classification_test', methods=['GET', 'POST'])
 def class_user_test():
-
-    data = {
-        "data":
-        [
-            {
-                'TOTAL_SPEND': "100",
-                'MARITAL': "Married",
-                'HH_SIZE': "3",
-                'INCOME_RANGE': "2",
-            },
-        ],
-    }
-
-    body = str.encode(json.dumps(data))
-    input_data = json.dumps(data)
-    print(str(body))
-    url = 'http://7ba816ed-fd83-40e7-a331-9a2fb8b268d7.eastus2.azurecontainer.io/score'
-    api_key = '' # Replace this with the API key for the web service
-    headers = {'Content-Type':'application/json'} #, 'Authorization':('Bearer '+ api_key)}
-    #return render_template("index.html")
-    req = urllib.request.Request(url, body, headers)
     
-    # LEFT OFF - code not even uploading to app
-    try:
-        response = urllib.request.urlopen(req)
-        result = response.read()
-        print(result)
-    except urllib.error.HTTPError as error:
-        print("The request failed with status code: " + str(error.code))
+    def runClassification(spend, marital, hh_size, income):
+        # define the model
+        model = LogisticRegression(max_iter = 1000)
+        # dummy training to initialize weights and biases of the model
+        model.fit(np.array([[0, 0, 0, 0], [1, 1, 1, 1]]), [0, 1]) 
 
-        # Print the headers - they include the requert ID and the timestamp, which are useful for debugging the failure
-        print(error.info())
-        print(json.loads(error.read().decode("utf8", 'ignore')))
+        # Assigning trained weights and biases to the model
+        model.coef_ = np.array([[ 0.01418876, -0.34609983, 0.14408751, 0.02292672]]) # weights
+        model.bias_ = np.array([-0.3975337]) # bias
 
-    return render_template("classification.html")
-    
+        example_instance = np.array([[spend, marital, hh_size, income]]) # [[TOTAL_SPEND, MARITAL, HH_SIZE, INCOME_RANGE]]
+
+        # Test the model
+        prediction = model.predict(example_instance)
+        return prediction[0].item()
+
+    df = pd.read_csv('CustomerChurn.csv')
+    spendData = sorted(df.TOTAL_SPEND.unique().tolist())
+    houseData = sorted(df.HH_SIZE.unique().tolist())
+    incomeData = sorted(df.INCOME_RANGE.unique().tolist())
+
+    if request.method == 'POST':
+        spendVal = int(request.form['spend'])
+        maritalVal = int(request.form['marital'])
+        houseVal = int(request.form['house'])
+        incomeVal = int(request.form['income'])
+        resultInt = runClassification(spendVal, maritalVal, houseVal, incomeVal)
+        result = 'Loyal'
+        if resultInt == 0:
+            result = 'Unloyal'
+        return render_template("classification.html", spend_items=spendData, housesize_items=houseData,income_items=incomeData, result=result)
+
+    return render_template("classification.html", spend_items=spendData, housesize_items=houseData,income_items=incomeData)
+
+@app.route('/regression_test', methods=['GET', 'POST'])
+def regression_test():
+
+    def runRegression(purchases):
+        # define the model
+        lrModel = LinearRegression()
+        # dummy training to initialize weights and biases of the model
+        lrModel.fit(np.array([0]).reshape(-1, 1), [1])
+        # Assigning trained weights and biases to the model
+        lrModel.coef_ = np.array([[0.08037347]]) # weights
+        lrModel.bias_ = np.array([3.68091473]) # bias
+        example_instance = np.array([purchases]).reshape(-1, 1) # [NUMBER OF PURCHASES]
+        # Test the model
+        prediction = lrModel.predict(example_instance)
+        print(prediction)
+        return prediction[0].item()
+
+    df = pd.read_csv('Samplepull1.csv')
+    print(df)
+    numPurchaseData = sorted(df['Number Of Purchases'].unique().tolist())
+    print(numPurchaseData)
+
+    if request.method == 'POST':
+        purchVal = int(request.form['purchases'])
+        resultInt = runRegression(purchVal)
+        return render_template("regression.html", purchase_items=numPurchaseData, result=resultInt)
+
+    return render_template("regression.html", purchase_items=numPurchaseData)
 
 if __name__ == '__main__':
     app.run()
